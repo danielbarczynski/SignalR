@@ -32,6 +32,8 @@ document
     document.getElementById("message").value = "";
   });
 
+// send group
+
 document
   .getElementById("sendToGroupButton")
   .addEventListener("click", function (event) {
@@ -43,13 +45,7 @@ document
     document.getElementById("message").value = "";
   });
 
-// then receiving
-
-connection.on("ReceiveMessage", function (message) {
-  let div = document.createElement("div");
-  div.textContent = message;
-  document.getElementById("messages").appendChild(div); // <div id-"messages"></div> append dodaje kolejnego diva do listy
-});
+// join group
 
 document
   .getElementById("joinGroup")
@@ -59,3 +55,11 @@ document
     });
     event.preventDefault();
   });
+
+// then receiving
+
+connection.on("ReceiveMessage", function (message) {
+  let div = document.createElement("div");
+  div.textContent = message;
+  document.getElementById("messages").appendChild(div); // <div id-"messages"></div> append dodaje kolejnego diva do listy
+});
