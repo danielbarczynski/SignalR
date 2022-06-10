@@ -3,11 +3,13 @@
     ViewData["Title"] = "Home page";
 }
 
-<textarea name="message" id="message" rows="3"></textarea>
-<input type="button" id="sendButton" value="Send Message" />
-
+<input name="message" id="message" />
+<input type="button" id="sendButton" value="Send" />
+<input type="button" id="sendToMeButton" value="Send To Me" />
+<input type="button" id="sendToGroupButton" value="Send To Group" />
+<input type="button" id="joinGroup" value="Join Group" />
 <div id="messages"></div>
 
-<script src="~/lib/aspnet-signalr/signalr.js"></script>
-<script src="~/js/messagee.js"></script>
+<script src="~/lib/aspnet-signalr/signalr.js"></script> 
+<script src="~/js/message.js"></script>
 
