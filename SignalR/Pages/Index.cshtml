@@ -1,0 +1,13 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<textarea name="message" id="message" rows="3"></textarea>
+<input type="button" id="sendButton" value="Send Message" />
+
+<div id="messages"></div>
+
+<script src="~/lib/aspnet-signalr/signalr.js"></script>
+<script src="~/js/messagee.js"></script>
+
